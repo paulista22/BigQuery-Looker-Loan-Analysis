@@ -1,3 +1,4 @@
+--Collect data from a CSV file
 LOAD DATA OVERWRITE fintech.state_region
 (
 state string,
@@ -7,3 +8,24 @@ region string
 FROM FILES (
 format = 'CSV',
 uris = ['gs://sureskills-lab-dev/future-workforce/da-capstone/temp_35_us/state_region_mapping/state_region_*.csv']);
+
+--Create table using a INNER JOIN 
+CREATE OR REPLACE TABLE fintech.loan_with_region AS
+SELECT
+lo.loan_id,
+lo.loan_amount,
+sr.region
+FROM fintech.loan lo
+INNER JOIN fintech.state_region sr
+ON lo.state = sr.state;
+
+--Create table with unique purpose data from a nested table
+CREATE TABLE fintech.loan_purpose AS
+SELECT DISTINCT application.purpose AS purpose
+FROM fintech.loan;
+
+--Create table with total loans issued by year
+CREATE TABLE fintech.loan_count_by_year AS
+SELECT issue_year, COUNT(loan_id) AS total_amount
+FROM fintech.loan
+GROPU BY issue_year;
