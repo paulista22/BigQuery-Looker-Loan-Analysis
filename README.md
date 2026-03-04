@@ -65,10 +65,10 @@ Geographic Diversification: Suspend new loan approvals in California due to high
 Enhanced Monitoring: Implement an early-warning system for the 87.89% of active loans. Since none are currently "Fully Paid," early detection of repayment risks is crucial to prevent further "Charged-off" losses.
 
 Product Personalization: Leverage borrower income and home-ownership data to develop personalized financial products for the lowest-risk segments, supporting more responsible and profitable lending decisions.
-<img width="816" height="1056" alt="Executive summary  (1)" src="https://github.com/user-attachments/assets/a79b4372-070f-41e2-88a4-b2058f921643" />
 
 ## Final Report
 <img width="816" height="1056" alt="Executive summary  (1)" src="https://github.com/user-attachments/assets/a79b4372-070f-41e2-88a4-b2058f921643" />
+
 ## Dashboard
 <img width="1920" height="1080" alt="image (17)" src="https://github.com/user-attachments/assets/99b26372-fbbd-4b32-8711-ef2a72ab2c4b" />
 
